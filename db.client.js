@@ -14,6 +14,10 @@ const sequelize = new Sequelize(
         rejectUnauthorized: false,
       },
     },
+        define: {
+            createdAt: 'added',
+            updatedAt: 'updated',
+        }
   },
 );
 
