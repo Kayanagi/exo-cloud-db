@@ -6,7 +6,8 @@ const sequelize = new Sequelize(
     process.env.DATABASE_USERNAME, // User
     process.env.DATABASE_PASSWORD, // Password{
     {
-        host : process.env.DATABASE_HOST,
+        host: process.env.DATABASE_HOST,
+        dialect: 'postgres',
     dialectOptions: {
       ssl: {
         require: true,
